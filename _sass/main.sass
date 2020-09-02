@@ -96,54 +96,61 @@
     .testimonials-row
         align-items: center
         display: flex
-        justify-content: space-between
+        justify-content: center
+        flex-wrap: wrap
         margin-top: 5em
-        .testimonial-dialog
-            align-items: center
-            background-color: #fff
-            border-radius: .3em
-            color: $gray
-            display: flex
-            flex-flow: column
-            justify-content: center
-            text-align: center
-            padding: 1.5em
-            width: 20em
+        .testimonial-item
+            margin: 2em
 
-        .talk-bubble
-            border-radius: .3em
-            margin: 40px
-            display: inline-block
-            position: relative
-            padding: 1.5em
-            width: 20em
-            height: auto
-            background-color: white
+            .talk-bubble
+                align-items: center
+                background-color: #fff
+                border-radius: .3em
+                color: $gray
+                display: flex
+                flex-flow: column
+                height: auto
+                justify-content: center
+                padding: 1.5em
+                position: relative
+                text-align: center
+                width: 20em
 
-        /*Right triangle, placed bottom left side slightly in*/
-        .tri-right.border.btm-left-in:before
-            content: ' '
-            position: absolute
-            width: 0
-            height: 0
-            left: 30px
-            right: auto
-            top: auto
-            bottom: -40px
-            border: 20px solid
-            border-color: $light transparent transparent $light
+            /*Right triangle, placed bottom left side slightly in*/
+            .tri-right.border.btm-left-in:before
+                content: ' '
+                position: absolute
+                width: 0
+                height: 0
+                left: 30px
+                right: auto
+                top: auto
+                bottom: -40px
+                border: 0 solid
+                border-color: $light transparent transparent $light
 
-        .tri-right.btm-left-in:after
-            content: ' '
-            position: absolute
-            width: 0
-            height: 0
-            left: 38px
-            right: auto
-            top: auto
-            bottom: -20px
-            border: 12px solid
-            border-color: white transparent transparent white
+            .tri-right.btm-left-in:after
+                content: ' '
+                position: absolute
+                width: 0
+                height: 0
+                left: 38px
+                right: auto
+                top: auto
+                bottom: -20px
+                border: 12px solid
+                border-color: white transparent transparent white
 
-    img
-        margin-bottom: 2em
+            .testimonial-client
+                align-items: center
+                display: flex
+                margin-top: 2em
+                img
+                    border-radius: 50%
+                    height: 4em
+                    margin-right: 1em
+                    width: 4em
+                .testimonial-client-info
+                    .testimonial-company
+                        font-size: .9em
+                        font-weight: 400
